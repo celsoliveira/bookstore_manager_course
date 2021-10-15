@@ -18,11 +18,11 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String name;
 
     @Column(nullable = false)
-    private Integer page;
+    private Integer pages;
 
     @Column(nullable = false)
     private Integer chapters;
